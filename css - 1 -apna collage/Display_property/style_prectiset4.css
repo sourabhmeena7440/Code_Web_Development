@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+button{
+    background-color: #f08804;
+    color: white;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+a
+{
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+/*2. add border to all the div*/
+.contentBox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#content{
+    height: 900px;
+}
+
+/* addd a diffrrencs background color to each div with an opacity of 0.5 */
+footer{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+}
+
+

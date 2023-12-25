@@ -1,0 +1,49 @@
+/*1. parsantage */
+/* #box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+#box2{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: 10%;
+} */
+
+
+/* 2. em */
+
+/* #box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    font-size: 10px;
+}
+
+#box2{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: 10%;
+    width: 5em;
+} */
+
+
+/* 3. rem */
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    font-size: 10px;
+  
+}
+
+#box2{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: 10%;
+    width: 5rem;
+}
