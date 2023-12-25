@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello js</title>
+    <script>
+        // 1.rest parameters
+      
+        // function display(...args)
+        // {
+        //     document.write(args);
+        // }
+        // display(10,20,30,40,50);       
+
+
+        // 2. 10 asain ho jati a me
+        // function display(a,...args)
+        // {
+        //     document.write(a+"<br>");
+        //     document.write(args);
+        // }
+        // display(10,20,30,40,50);
+
+
+        // 3.index accsess karne par
+        // function display(a,...args)
+        // {
+        //     document.write(a+"<br>");
+        //     document.write(args[2]);
+        // }
+        // display(10,20,30,40,50);
+
+
+        // 4. ak se jyada parameters de skte hai
+        function display(a,b,...args)
+        {
+            document.write(a+"<br>");
+            document.write(args[2]);
+        }
+        display(10,20,30,40,50);
+    </script>
+</head>
+<body>

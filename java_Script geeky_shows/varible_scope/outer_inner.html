@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello js</title>
+    <script>
+
+            // function show(){
+            //     //Local varible
+            //     var j = "j a local varible of outer function ";
+            //     document.write(j + "<br>");
+            //     function innerFun(){
+            //         //local varible
+            //         var k = "k a local varible of inner function ";
+            //         document.write(k + "<br>");
+            //     }
+            //     innerFun();
+            // }
+            // show();
+
+
+
+
+
+            
+            // 1. inner function ke under outerfunction coll ho jata hai
+            // function show(){
+            //     //Local varible
+            //     var j = "j a local varible of outer function ";
+            //     document.write(j + "<br>");
+            //     function innerFun(){
+            //         //local varible
+            //         var k = "k a local varible of inner function ";
+            //         document.write(k + "<br>");
+            //         document.write(j + "<br>");
+            //     }
+            //     innerFun();
+            // }
+            // show();
+
+
+
+
+
+
+            //  2. inner function ke varible ko outer function varible access nhi kar skta hai
+            function show(){
+                //Local varible
+                var j = "j a local varible of outer function ";
+                document.write(j + "<br>");
+                function innerFun(){
+                    //local varible
+                    // k = "k a local varible of inner function ";  //globle varible ban gya var htane par 
+                    var k = "k a local varible of inner function "; // local varible
+                    document.write(k + "<br>");
+                    document.write(j + "<br>");
+                }
+                innerFun();
+                document.write(k + "<br>");
+            }
+            show();
+    </script>
+</head>
+<body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HELLO JS</title>
+</head>
+<body>
+    <script>
+        // 1.constructer
+        // function mobile(){
+        //     this.model = '3310';
+        //     this.price = function(){
+        //         document.write(this.model + "Price Rs 3000");
+        //     }
+        // }
+        // var samsung = new mobile();
+        // var lg = new mobile();
+        // samsung.price();
+        // lg.price();
+
+
+
+        // 2. constructer with parameters
+        // constructer hai ye jise ap mobile ka blueprint  kah skte ho
+        function mobile(model_no){
+            this.model = model_no;
+            this.price = function(){
+                document.write(this.model + "Price Rs 3000  <br>");
+            };
+        }
+        var samsung = new mobile('Galaxy');
+        var nokia = new mobile('3310');
+        samsung.price();
+        nokia.price();
+    </script>
+</body>
+</html>

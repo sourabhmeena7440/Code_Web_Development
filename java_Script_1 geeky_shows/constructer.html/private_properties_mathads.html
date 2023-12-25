@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HELLO JS</title>
+</head>
+<body>
+    <script>
+        // private properties and mathads
+        // var , let 
+        // var mobile = function(model_no,sprice){
+        //     this.model = model_no;
+        //     this.color = 'white';
+        //     var price = 3000;
+        //     this.sp = sprice;
+        //     var show = function() { return "hello world";};
+        // };
+        // var samsung = new mobile('Galaxy',2000);
+        // var nokia = new mobile('3310', 1000);
+        // document.write(nokia.price);
+        // document.write(nokia.show()); 
+        
+
+
+
+
+        // 2. private properties ko accsse kar skte hai bahar se bhi
+        // is mathads se ap read kar skte ho righte nhi kar skte ho
+        var mobile = function(model_no,sprice){
+            this.model = model_no;
+            this.color = 'white';
+            var price = 3000;
+            this.sp = sprice;
+            this.sellingprice = function(){
+                return(price);
+            }
+        };
+        var samsung = new mobile('Galaxy',2000);
+        var nokia = new mobile('3310', 1000);
+        document.write(nokia.sellingprice());
+        
+
+
+
+    </script>
+</body>
+</html>

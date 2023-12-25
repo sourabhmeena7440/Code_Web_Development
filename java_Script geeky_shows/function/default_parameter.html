@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello js</title>
+    <script>
+        // 1. default parameters
+        // function add(a,b,c=70){
+        //     document.write("A= " + a + "<br>");
+        //     document.write("B= " + b + "<br>");
+        //     document.write("C= " + c + "<br>");
+        // }
+        // add(10,20);
+
+
+
+        // 2. default parameters
+        // function add(a,b,c=null){
+        //     document.write("A= " + a + "<br>");
+        //     document.write("B= " + b + "<br>");
+        //     document.write("C= " + c + "<br>");
+        // }
+        // add(10);
+
+
+        // 3. Array
+        function add(num,a=["geeky","show"]){
+            document.write("A=" + a[0] + "<br>");
+            document.write("A=" + a[1] + "<br>");
+            document.write("num=" + num + "<br>");
+        } 
+        add(20, [102 ,103]);
+    </script>
+</head>
+<body>

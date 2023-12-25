@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello js</title>
+    <script>
+        //function arguments missing
+      
+        // function display(name1,name2)
+        // {
+        //     document.write(arguments[0] + " ");
+        //     document.write(arguments[1] +" ");
+        // }
+        // display(10,20);    
+        
+        
+
+
+        // hello print hoga first value lega
+        // function display(name1,name2)
+        // {
+        //     arguments[0] = "hello";
+        //     document.write(arguments[0] +" ");
+        //     document.write(arguments[1] +" ");
+        // }
+        // display(10,20);
+
+
+
+        // function display(name1,name2)
+        // {
+        //     arguments[0] = "hello";
+        //     document.write(name1 + " ") ;
+        //     document.write(name2);
+        // }
+        // display("geekyshow","world");
+
+
+
+        // legth properties
+        // function display(name1,name2)
+        // {
+        //     document.write(arguments.length);
+        // }
+        // display("geekyshow","world");
+
+
+
+        // function display(name1,name2)
+        // {
+        //     var l = arguments.length;
+        //     document.write(l);
+        // }
+        // display("geekyshow","world");
+
+
+        //  jitne argumnets hoge utni length dega 
+        // function display(name1,name2)
+        // {
+        //     var l = arguments.length;
+        //     document.write(l);
+        // }
+        // display("geekyshow", "Hello","world");
+
+
+        
+        // for loop se bhi count kar skte hai
+        // function display()
+        // {
+        //     arguments[0] = "hello";
+        //     for(var i = 0;i<arguments.length;i++)
+        //     {
+        //         document.write(arguments[i] + " ");
+        //     }
+        // }
+        // display("geekyshow", "Hello","world");
+
+
+
+
+        // callee
+        function display(mame1,num,name3)
+        {
+            for(var i = 0;i<arguments.length;i++)
+            {
+                document.write(arguments.callee);
+            }
+        }
+        display("geekyshow", "Hello","world");
+    </script>
+</head>
+<body>
+

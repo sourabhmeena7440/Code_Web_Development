@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HELLO JS</title>
+</head>
+<body>
+    <script>
+        // upper bala part constructer hai
+
+
+//1. check properties exist ,typeof se
+//     function mobile(model_no){
+//     this.model = model_no;
+//     // this.memory = 4;
+// }
+// var samsung = new mobile('Galaxy');
+// var nokia = new mobile('3310');
+
+// if(typeof nokia.memory !== 'undefined'){
+//     document.write("Available");
+// }else{
+//     document.write("Doesnt Exist");
+// }
+
+
+
+
+// 2. check properties exist, in se 
+//     function mobile(model_no){
+//     this.model = model_no;
+//     this.memory = 4;
+// }
+// var samsung = new mobile('Galaxy');
+// var nokia = new mobile('3310');
+
+// if(nokia.in !== 'undefined'){
+//     document.write("Available");
+// }else{
+//     document.write("Doesnt Exist");
+// }
+
+
+
+
+// 3. chek properties of costructer , hsaOwnProperty
+function mobile(model_no){
+    this.model = model_no;
+    this.memory = 4;
+}
+var samsung = new mobile('Galaxy');
+var nokia = new mobile('3310');
+
+if(nokia.hasOwnProperty !== 'undefined'){
+    document.write("Available");
+}else{
+    document.write("Doesnt Exist");
+}
+    </script>
+</body>
+</html>

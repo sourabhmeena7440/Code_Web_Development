@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello js</title>
+    <script>
+        //rest parameters 
+        // function restshow(...args){
+        //     console.log(args);
+        // }
+        // restshow(10,20,30,40,50);
+
+        // // Arguments Objects
+        // function show(){
+        //     console.log(arguments);
+        // }
+        // show(10,20,30,40,50);
+
+
+
+        // 1. Rest parameters 
+        function restshow(a,...args){
+            console.log("a" +a);
+            console.log(args);
+        }
+        restshow(10,20,30,40,50);
+
+        // Arguments Objects
+        function show(a){
+            console.log("a" +a);
+            console.log(arguments);
+        }
+        show(10,20,30,40,50);
+    </script>
+</head>
+<body>

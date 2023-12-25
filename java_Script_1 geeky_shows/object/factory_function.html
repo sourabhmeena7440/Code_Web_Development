@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HELLO JS</title>
+</head>
+<body>
+    <script>
+        // 1. factry function
+        // function mobile(){
+        //     return{
+        //         model:'galaxy',
+        //         price: function(){return "price Rs. 3000";}
+        //     };
+        // }
+        // var samsung =  mobile();
+        // document.write(samsung.model + " " + samsung.price());
+
+
+
+
+
+
+        // 2. factory function with parameters
+        // object return kar rha hai
+        function mobile(model_no){
+            return{
+                model: model_no,
+                price: function(){
+                    return "Price is Rs. 3000";
+                }
+            };
+        }
+        var samsung = mobile('galaxy');
+        var nokia = mobile('3310');
+        document.write(samsung.model + " " + samsung.price() + "<br>");
+        document.write(nokia.model + " " + nokia.price() + "<br>");
+    </script>
+</body>
+</html>

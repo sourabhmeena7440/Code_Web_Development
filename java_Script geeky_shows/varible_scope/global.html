@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello js</title>
+    <script>
+       // Accessible from anywhere
+       var i = "I am global varible";   // global varible
+       function show(){
+        document.write(i + "<br>");  // inside function
+       }
+       show();
+       document.write(i + "<br>")   // outside varibale
+       
+       function display(){
+        document.write(i + "<br>"); //inside function
+       }
+       display();
+
+       if(true){
+            document.write(i + "<br>");    //inside block
+       }
+    </script>
+</head>
+<body>
