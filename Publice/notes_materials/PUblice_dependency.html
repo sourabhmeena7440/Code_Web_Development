@@ -1,0 +1,31 @@
+Warning: PowerShell detected that you might be using a screen reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it, run 'Import-Module PSReadLine'.
+
+PS C:\Users\Ajesh Meena\OneDrive\Desktop\Publice> node index
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'lodash'
+Require stack:
+- C:\Users\Ajesh Meena\OneDrive\Desktop\Publice\index.js
+←[90m    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loader:778:27)←[39m
+←[90m    at Module.require (node:internal/modules/cjs/loader:1005:19)←[39m
+←[90m    at require (node:internal/modules/cjs/helpers:102:18)←[39m
+    at Object.<anonymous> (C:\Users\Ajesh Meena\OneDrive\Desktop\Publice\index.js:1:9)
+←[90m    at Module._compile (node:internal/modules/cjs/loader:1103:14)←[39m
+←[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)←[39m
+←[90m    at Module.load (node:internal/modules/cjs/loader:981:32)←[39m
+←[90m    at Function.Module._load (node:internal/modules/cjs/loader:822:12)←[39m
+←[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: [ ←[32m'C:\\Users\\Ajesh Meena\\OneDrive\\Desktop\\Publice\\index.js'←[39m ]
+}
+PS C:\Users\Ajesh Meena\OneDrive\Desktop\Publice> npm install
+
+added 1 package, and audited 2 packages in 3s
+
+found 0 vulnerabilities
+PS C:\Users\Ajesh Meena\OneDrive\Desktop\Publice> node index
+hello NPM
+PS C:\Users\Ajesh Meena\OneDrive\Desktop\Publice>
