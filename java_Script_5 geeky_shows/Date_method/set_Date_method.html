@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.set date method
+        //Day as number 1-31
+        // Hours as number 0-23
+        // Manth as number 0-11        Ex - 0 = jan
+        // Week Day as Number 0 - 6    Ex - 0 = sun
+        var tarikh= new Date();     // currant TIme
+        document.write(tarikh + "<br>");
+
+        tarikh.setHours(22);
+        document.write(tarikh + "<br>");
+
+        tarikh.setMinutes(56);
+        document.write(tarikh + "<br>");
+
+        tarikh.setSeconds(40);
+        document.write(tarikh + "<br>");
+
+        tarikh.setDate(26);
+        document.write(tarikh + "<br>");
+
+        tarikh.setMonth(11);
+        document.write(tarikh + "<br>");
+
+        tarikh.setFullYear(2022);
+        document.write(tarikh + "<br>");
+
+        tarikh.setFullYear(2022, 3, 15);
+        document.write(tarikh + "<br>");
+    </script>
+</body>
+</html>

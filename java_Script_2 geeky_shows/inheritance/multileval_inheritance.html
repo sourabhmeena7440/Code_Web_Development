@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // engan javascript -> down se up ki taraf jata hai  aor value leta hai na ki up se down ki aor nhi jata ahi 
+        // niche jo value rheti use hi accsess kar skta hai
+        var mobile = function(){
+            this.a = 10;
+        }
+
+        // Prototype property of mobile
+        mobile.prototype.z = 30;
+
+        // sub class 
+        var samsung = function(){
+            // it calls super class constructor and initialize property without this you can not access super class property using sub class object
+            mobile.call(this);
+            this.b = 20;
+        }
+
+        var Galaxy = function(){
+            samsung.call(this);
+            this.c = 100;
+        }
+
+        // prototype Inheritance
+        samsung.prototype = Object.create(mobile.prototype);
+        samsung.prototype.constructor = samsung;
+
+        Galaxy.prototype = Object.create(samsung.prototype);
+        Galaxy.prototype.constructor = Galaxy;
+
+        var m = new mobile();
+        var s = new samsung();
+        var g = new Galaxy();
+
+        document.write("Galaxy Object can access <br>");
+        document.write("Mobile A: " + g.a + "<br>");
+        document.write("samsung B: " + g.b + "<br>");
+        document.write("mobile prototype z: " + g.z + "<br>");
+        document.write("Galaxy c: " +g.c + "<br> <br>");
+
+        document.write("Galaxy Object can access <br>");
+        document.write("Mobile A: " + s.a + "<br>");
+        document.write("samsung B: " + s.b + "<br>");
+        document.write("mobile prototype z: " + s.z + "<br>");
+        document.write("Galaxy c: " +s.c + "<br> <br>");
+
+        document.write("Galaxy Object can access <br>");
+        document.write("Mobile A: " + m.a + "<br>");
+        document.write("samsung B: " + m.b + "<br>");
+        document.write("mobile prototype z: " + m.z + "<br>");
+        document.write("Galaxy c: " +m.c + "<br> <br>");
+    </script>
+</body>
+</html>

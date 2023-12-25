@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        var mobile = function(model_no){
+            // instance member
+            this.model = model_no;
+            this.price = 3000;
+        };
+        var samsung = new mobile('Galaxy');
+        var nokia = new mobile('3310');
+        //classname.prototype.key = value;
+        // prototype member
+
+        // samsung.color = 'white';
+        // nokia.color = 'white';
+        mobile.prototype.color = 'white';  // main line
+
+        document.write(samsung.color);
+        document.write(nokia.color);
+        console.log(samsung);
+        console.log(nokia);
+    </script>
+</body>
+</html>

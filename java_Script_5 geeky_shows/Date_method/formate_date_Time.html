@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. how to formate date and time
+        //Day as number 1-31
+        // Hours as number 0-23
+        // Manth as number 0-11        Ex - 0 = jan
+        // Week Day as Number 0 - 6    Ex - 0 = sun
+        
+        var tarikh = new Date();
+        document.write(formateDate(tarikh) + "<br>");
+
+        function formateDate(pd){
+            var date = pd.getDate();
+            var month = pd.getMonth();
+                month++;
+            var Year = pd.getFullYear();
+            return date + " - " + month + " - " + Year;
+        }
+    </script>
+</body>
+</html>

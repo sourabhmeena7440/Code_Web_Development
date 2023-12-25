@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // how to get input from user in 2d Array
+        // define 2d Array
+        // var rows = 2;
+        // var cols = 3;
+        // var geek = new Array(rows);
+        // for(var i=0;i<rows;i++){
+        //     geek[i]=new Array(cols);
+        // }
+
+        //input for array
+        for(var i=0;i<2;i++){
+            for(var j=0; j<3; j++){
+                geek[i][j]  = prompt("Enter name:");
+            }
+            document.write("<br>");
+        }
+
+        // Displaying value
+        for(var i=0;i<rows;i++){
+            for(var j=0;j<cols;j++){
+                document.write(i + " " + j + geek[i][j] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

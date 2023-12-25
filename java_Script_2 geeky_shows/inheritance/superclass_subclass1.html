@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // function for inheritance
+        function extend(child,parent){
+            child.prototype = Object.create(parent.prototype);
+            child.prototype.constructor = child;
+        }
+        // super class
+        // mobile se inherite hokar getmodel aaya hai
+        var mobile = function(){
+        }
+        // prototype methad
+        mobile.prototype.getModel = function(){ return this.model; }
+
+        // sub class
+        var samsung = function(model,price){         //  constructor
+            this.model = model;
+            this.price = price;
+        }
+
+        // sub class
+        var lenovo = function(model){             // constructor
+            this.model = model;
+        }
+
+        //Inheritance
+       extend(samsung,mobile);
+       extend(lenovo,mobile);
+
+        // agr apn ne particule name lekar defune kiya hai to bah sirf usi value me define honge 
+        // mobile class ka use karte to ap ko jha ap ne condition lgai hai bha sbhi jagah change ho jayega 
+        samsung.prototype.getModel = function(){ return this.price;};
+
+        // object
+        var Galaxy = new samsung('Galaxy',3000);
+        var phab2 = new lenovo('phab 2');
+        console.log(Galaxy.getModel());
+        console.log(phab2.getModel());
+        console.log(Galaxy.getModel());
+
+        
+    </script>
+</body>
+</html>

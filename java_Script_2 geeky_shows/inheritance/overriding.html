@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // function for inheritance
+        function extend(child,parent){
+            child.prototype = Object.create(parent.prototype);
+            child.prototype.constructor = child;
+        }
+        // super class
+        var mobile = function(){
+
+        }
+        // prototype methad object
+        mobile.prototype.show = function(){ return "super class method"; }
+
+        // sub class
+        var samsung = function(){         //  constructor
+         
+        }
+
+        //sub class samsung extending super class mobile
+        extend(samsung,mobile);
+
+        samsung.prototype.show = function() {        // object
+            return "sub class method"
+        }
+
+       // creating object of sub class samsung
+        var sam = new samsung();
+        var mob  = new mobile();
+
+        // accessing super class ,property model
+        //using sub class object
+        document.write(sam.show());
+        document.write(mob.show());
+        
+    </script>
+</body>
+</html>

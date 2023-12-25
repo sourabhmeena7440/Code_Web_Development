@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // super class 
+        var mobile = function(){
+            this.a = 10;
+        }
+        mobile.prototype.z = 30;
+
+        // sub class
+        var samsung = function(){
+            mobile.call(this);
+            this.b = 20;
+        }
+
+        // prototype inheritance
+        samsung.prototype = Object.create(mobile.prototype);
+        samsung.prototype.constructor = samsung;
+
+        //samsung.prototype.z = 50;            // same property ko alg insilization kar skte hai
+        mobile.prototype.z = 50;               //mobile prototype ;overide ho jata hai
+
+        var m = new mobile();
+        var s = new samsung();
+        
+        document.write(m.a + "<br>");
+        document.write(m.b + "<br>");     // b undefine show krega ye child class ki property hi jo niche taraf nhi aaata hai ye upperr ki taraf jata hai
+        document.write(m.z + "<br>");
+        document.write(s.z + "<br>");
+    </script>
+</body>
+</html>

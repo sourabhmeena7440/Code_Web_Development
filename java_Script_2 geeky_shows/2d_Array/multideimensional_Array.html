@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // 1. empty 2d Array
+        // var geek = [[],  [],  []];
+        // geek[0][0] = "rahul";
+        // geek[0][1] = "Dell";
+        // geek[0][2] = 10;
+
+        // 2d Array letral
+        // var geek = [
+        //     ["rhaul","Dell", 10],
+        //     ["sonam", "HP", 20],
+        //     ["sumit", "zed", 30]
+        // ];
+
+        // constructor se solve karna
+        var geek =  new Array(
+            ["rhaul","Dell", 10],
+            ["sonam", "HP", 20],
+            ["sumit", "zed", 30]
+        );
+        for(let i=0;i<3;i++){
+            for(let j=0;j<3;j++){
+                //document.write(geek[i][j] + " ");             // ye value print karne ke liye
+                // document.write( i + "  " + j + " " );          // index number print karne ke liye
+                document.write( i + "  " + j + " " + geek[i][j] + " ");     // yha dono index and value dono print hogi
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

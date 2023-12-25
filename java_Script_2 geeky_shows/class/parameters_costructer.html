@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // parameters constructor
+        class mobile{
+            constructor(model_no,color){
+                this.model = model_no;
+                this.clr = color;
+            }
+            show(){
+                return this.model + "price Rs.3000" +this.clr;
+            }
+        }
+        var nokia = new mobile('galaxy','white');
+        var lg = new mobile('note4','black' );
+        document.write(nokia.show() +"<br>");
+        document.write(lg.show());
+
+    </script>
+</body>
+</html>

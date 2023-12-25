@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // 1. two object banata hai function, prototype
+        // prototype object hai
+        // in dono ke pass properties same hai first and second
+        function mobile(){
+            
+        }
+        console.log(mobile.prototype);
+
+        var lg = new mobile();
+        console.log(lg.__proto__);    // construter ko hold kiye huye hai
+
+        // verify
+        console.log(mobile.prototype === lg.__proto__);   // dono == prototype hai 
+        console.log(mobile === lg.__proto__.constructor);
+        console.log(mobile === mobile.prototype.constructor);
+    </script>
+</body>
+</html>

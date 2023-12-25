@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        var mobile = function(model){         // constructor
+            this.model = model;
+        };
+        mobile.prototype.getmodel = function(){return this.model;}
+
+        var samsung = function(model,price){
+            mobile.call(this,model)
+            this.price = price;
+        }
+
+        // Inheritance
+        samsung.prototype = Object.create(mobile.prototype);
+        samsung.prototype.constructor = samsung;
+
+        var Galaxy = new samsung('galaxy',3000);
+        console.log(Galaxy.getmodel());
+        console.log(Galaxy.model);
+    </script>
+</body>
+</html>

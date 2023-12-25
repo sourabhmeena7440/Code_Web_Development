@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // 1. undefine de rha hai 
+        function mobile(){
+            this.a = 20;
+            // 20 ko pehel aaccess karega
+
+        }
+        mobile.prototype.a = 10;    // prototype object ke pass hai 10 value
+
+        var lg = new mobile();
+        console.log(lg.a);
+    </script>
+</body>
+</html>

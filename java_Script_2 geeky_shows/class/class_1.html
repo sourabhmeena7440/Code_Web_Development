@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // 1. yah code pehel likha jata tha
+    //    var mobile = function(){
+    //     this.model = 'galaxy';
+    //     this.show = function(){
+    //         return "class using constructor";
+    //     }
+    //    }
+    //    //prototype member
+    //    mobile.prototype.display = function(){
+    //     return "prototype method";
+    //    }
+       
+       
+
+
+
+
+    // 2. new program 
+    // class declaration
+    class mobile {
+        constructor(){
+            //Instance member
+            this.a = 12;
+            this.show = function(){
+                return "Instance method";
+            };
+        }
+        // prototype member
+        display(){
+            return "prototype method";
+        }
+    } 
+    var nokia = new mobile();
+    document.write(nokia.display());
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        // 1. how to create empty 2d array
+
+
+        // * using array literal
+        // var geek = [[], []];
+
+
+        //  * using array construtor
+        // var geek = new Array([], []);
+
+        // for(let i=0;i<2;i++){
+        //     for(let j=0;j<3;j++){
+        //         // document.write(geek[i][j] + " ");   // value print karne 
+        //         document.write( i + " | " + j + " | ");   // index number ke liye
+        //     }
+        //     document.write("<br>");
+        // }
+
+
+
+
+
+
+        // 2.  literal se bnaya
+        // var geek = [];
+        // var rows = 2;
+        // var cols = 3;
+        // for(var i=0;i<rows;i++){
+        //     geek[i]=[];
+        // }
+        // for(var i=0;i<rows;i++){
+        //     for(var j=0; j<cols; j++){
+        //         document.write(geek[i][j] + " ");
+        //     }
+        //     document.write("<br>");
+        // }
+
+
+
+
+
+        // 3.constructor
+        var rows = 2;
+        var cols = 3;
+        var geek = new Array(rows);
+        for(var i=0;i<rows;i++){
+            geek[i]=new Array(cols);
+        }
+        for(var i=0;i<rows;i++){
+            for(var j=0; j<cols; j++){
+                document.write(geek[i][j] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello Js</title>
+</head>
+<body>
+    <script>
+        var mobile = function(model_no){
+            // instance member
+            this.model = model_no;
+            this.price = 3000;
+        };
+        var samsung = new mobile('Galaxy');
+        var nokia = new mobile('3310');
+        //classname.prototype.key = value;
+        // prototype member
+        mobile.prototype.color = 'white';
+        // isme sirf ap ko intance member hi show honge
+        // document.write(Object.keys(samsung));
+
+        // ap ko prototype member bhi show karna hai hai to ap for in ka use karna padega
+        for(var key in samsung){
+            document.write(key);
+        }
+    </script>
+</body>
+</html>
