@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: "jost",sans-serif;
+            background-color: #efefef;
+        }
+        h1
+        {
+            font-weight: bold;
+        }
+    
+    </style>
+    <body>
+        <form action="#">
+            <div>
+                <label for="range">range</label>
+                <input type="range" name="volume" min="0" max="100" value="50px">
+            </div>
+            <br>
+            <div>
+                <label for="birthdate">birthdate</label>
+                <input type="date" name="birthdate">
+            </div>
+
+            <br>
+            <div>
+                <label for="appointmentTime">appointmentTime</label>
+                <input type="time" name="appointmentTime">
+            </div>
+
+            <br>
+            <div>
+                <label for="favoritecolore">favoritecolore</label>
+                <input type="color" name="favoritecolore">
+            </div>
+
+            <br>
+            <div>
+                <label for="website">website</label>
+                <input type="url" name="website" placeholder="Enter website url">
+            </div>
+
+            <br>
+            <div>
+                <label for="searchQuery">searchQuery</label>
+                <input type="url" name="website" placeholder="Enter website url">
+            </div>
+
+            <br>
+            <div>
+                <label for="expiryDate">month & year</label>
+                <input type="month" name="expiryDate">
+            </div>
+            
+            <br>
+            <div>
+                <label for="week">vacationweek</label>
+                <input type="week" name="vacationweek">
+            </div>
+        </form>
+        <br>
+
+        <!-- semantic html form elemnts -->
+        <!-- group bnane ka kam karta hai samantic tag  -->
+
+        <fieldset>
+            <legend>contact info</legend>
+            <div>
+                <label for="username">username</label>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <label for="email">Enter your email</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="textarea">message</label>
+                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="submit">
+        </fieldset>
+    </body>
+</head>
+</html>

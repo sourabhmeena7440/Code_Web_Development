@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: "jost",sans-serif;
+            background-color: #efefef;
+        }
+        h1
+        {
+            font-weight: bold;
+        }
+    
+        .sameclass{
+            background-color: red;
+        }
+    </style>
+    <body>
+       <h1>html form</h1>
+       <form>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <label for="number">mobile number</label>
+            <input type="number" class="sameclass " id="nubers" max="5" min="1" value="1">
+        </div>
+
+        <div>
+            <label for="gender">gender</label>
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female"> female
+        </div>
+
+        <div>
+            <label for="hobbies">fav hobbies</label>
+            <input type="checkbox" name="interest" value="music"> music
+            <input type="checkbox" name="interest" value="support"> sports
+        </div>
+
+        <div>
+            <label for="country">fav country:</label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="canada">CANADA</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="country">select of country</label>
+            <input type="text" id="country" name="country" list="countries">
+            <datalist id="countries">
+                <option value="usa"></option>
+                <option value="canada"></option>
+                <option value="uk"></option>
+                <option value="Australia"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="comment">message</label>
+            <textarea 
+            name="comment"
+            rows="10"
+            cols="100"
+            placeholder="Enter your comment"
+            ></textarea>
+        </div>
+
+        <div>
+            <label for="file">select file</label>
+            <input type="file" name="fileUpload">
+        </div>
+        
+        <input type="submit" value="submit">
+        <button type="submit">submit</button>
+       </form>
+    </body>
+</head>
+</html>
+
+
+<!-- select and datalist deffrens hote hai
+select -> me jo  bhi country di hai bhi hame select kar pate hai 
+datalist -> me hame select bhi add kar pate hai and other text bhi add kar pate hai-->
