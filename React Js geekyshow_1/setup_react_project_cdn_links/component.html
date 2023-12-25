@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    // how to setup reactjs project using cdn links 
+    <div id="root"></div>
+    <script type="text/babel"> 
+    // Es6 ka use kara hai
+    // jsx ka code hai
+        class App extends React.Component{
+            render(){
+                return(
+                    <div>
+                        <h1>hello React</h1>   
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+</body>
+</html>
